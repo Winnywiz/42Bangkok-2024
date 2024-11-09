@@ -28,6 +28,8 @@ int	ft_printf(const char *s, ...)
 	va_list	args;
 	int		length;
 
+	if (!s)
+		return (-1);
 	length = 0;
 	va_start(args, s);
 	while (*s)
